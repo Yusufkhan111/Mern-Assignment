@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Club Registration and Events Page">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Register - Tech Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="hero">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Register for Tech Club</h1>
+    </header>
+
+    <main class="card">
+        <form action="#" method="POST">
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+            </p>
+
+            <p>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                <label>Interests:</label><br>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+            </p>
+
+            <p>
+                <label for="club">Select Club:</label><br>
+                <select id="club" name="club">
+                    <option value="tech">Tech Club</option>
+                    <option value="ai">AI & ML Club</option>
+                    <option value="web">Web Dev Club</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Why do you want to join?</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Register</button>
+            </p>
+        </form>
+    </main>
+</body>
+
+</html>
